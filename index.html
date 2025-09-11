@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bratics Projects</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: url('https://i.pinimg.com/originals/25/3e/cf/253ecf34e5a1824cca18cd76ab675d34.gif') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      backdrop-filter: blur(20px);
+      background: rgba(20, 20, 20, 0.6);
+      padding: 2rem 2rem;
+      text-align: center;
+      color: white;
+      border-radius: 20px;
+      margin: 2rem 1rem;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      color: #00ff99;
+      text-shadow: 0 0 6px rgba(0,255,153,0.5);
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #b2ffcc;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 1200px;
+      width: 100%;
+    }
+
+    .card {
+      background: rgba(30, 30, 30, 0.6);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .card:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 15px 35px rgba(0,255,153,0.5);
+      border: 1px solid rgba(0,255,153,0.3);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      border-radius: 20px 20px 0 0;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover img {
+      transform: scale(1.03);
+      box-shadow: 0 0 15px rgba(0,255,153,0.3);
+    }
+
+    .card-content {
+      padding: 1rem;
+    }
+
+    .card-content h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1.3rem;
+      color: #00ff99;
+      text-shadow: 0 0 5px rgba(0,255,153,0.4);
+    }
+
+    .card-content p {
+      font-size: 0.95rem;
+      color: #b2ffcc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: rgba(20,20,20,0.6);
+      margin: 2rem 1rem 2rem 1rem;
+      color: #b2ffcc;
+      border-radius: 20px;
+      backdrop-filter: blur(20px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bratics Projects</h1>
+	<p>A dream to help others</p>
+    <p>✨A showcase of my works and creations ✨</p>
+  </header>
+
+  <section class="projects">
+    <a class="card" href="https://github.com/KloBraticc/Plexity" target="_blank">
+      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Plexity">
+      <div class="card-content">
+        <h3>Plexity</h3>
+        <p>A modern project hosted on GitHub showcasing unique design and functionality.</p>
+      </div>
+    </a>
+
+    <a class="card" href="https://github.com/voidstrap/Voidstrap/releases" target="_blank">
+      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Voidstrap">
+      <div class="card-content">
+        <h3>Voidstrap</h3>
+        <p>An interactive toolkit with smooth UI and powerful release features.</p>
+      </div>
+    </a>
+
+    <a class="card" href="https://github.com/KloBraticc/LightFPS" target="_blank">
+      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="LightFPS">
+      <div class="card-content">
+        <h3>LightFPS</h3>
+        <p>A performance-focused project aimed at boosting frame rates and efficiency.</p>
+      </div>
+    </a>
+
+    <a class="card" href="https://github.com/KloBraticc/Klo-Tweaker" target="_blank">
+      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Klo Tweaker">
+      <div class="card-content">
+        <h3>Klo Tweaker</h3>
+        <p>A customization and tweaking tool designed for better control and performance.</p>
+      </div>
+    </a>
+	
+	    <a class="card" href="https://github.com/KloBraticc/Klo-Tweaker" target="_blank">
+      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Klo Tweaker">
+      <div class="card-content">
+        <h3>Hellstrap (Coming Soon!)</h3>
+        <p>A all in 1 bootstrapper for tweaking almost any game.</p>
+      </div>
+    </a>
+	
+		    <a class="card" href="https://github.com/KloBraticc/Klo-Tweaker" target="_blank">
+      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Klo Tweaker">
+      <div class="card-content">
+        <h3>AVTweaker (Coming Soon!)</h3>
+        <p>A 1 button click tweaker for debloats and optimizations.</p>
+      </div>
+    </a>
+  </section>
+  
+  lub cozy
+
+  <footer>
+    <p>© 2025 Bratics Projects. All rights reserved.</p>
+  </footer>
+</body>
+</html>
