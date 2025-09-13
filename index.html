@@ -112,15 +112,111 @@
       border-radius: 20px;
       backdrop-filter: blur(20px);
       box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+      width: 100%;
+      max-width: 900px;
+    }    
+.profile {
+  text-align: center;
+}
+	  
+.profile img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #00ff99;
+  box-shadow: 0 0 20px rgba(0,255,153,0.6);
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0,255,153,1);
+}
+
+.discord-tag {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #00ff99;
+  text-shadow: 0 0 6px rgba(0,255,153,0.7);
+}
+
+.profile-buttons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  background: linear-gradient(90deg, #00ff99, #00ccff);
+  box-shadow: 0 0 0px rgba(0,255,153,0.6);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0,255,153,1);
+}
+    .skills {
+      margin-top: 2rem;
+      text-align: left;
+      width: 100%;
+      max-width: 900px;
+    }
+
+    .skill {
+      margin: 1rem 0;
+    }
+
+    .skill p {
+      margin-bottom: 0.3rem;
+      color: #fff;
+      font-weight: bold;
+      text-shadow: 0 0 4px rgba(0,255,153,0.6);
+    }
+
+    .progress {
+      width: 100%;
+      background: rgba(255,255,255,0.1);
+      border-radius: 10px;
+      overflow: hidden;
+      height: 20px;
+      box-shadow: inset 0 0 10px rgba(0,255,153,0.3);
+      position: relative;
+    }
+
+    .progress-bar {
+      height: 100%;
+      width: 0;
+      background: linear-gradient(90deg, #00ff99, #00ccff);
+      box-shadow: 0 0 3px rgba(0,255,153,0.8);
+      border-radius: 10px;
+      transition: width 1.5s ease;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 8px;
+      font-size: 0.8rem;
+      font-weight: bold;
+      color: #000;
+      text-shadow: none;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Bratics Projects</h1>
-	<p>A dream to help others</p>
-    <p>✨A showcase of my works and creations ✨</p>
-  </header>
+<header style="text-align: center; padding: 20px 150px;">
+  <h1>Bratics Projects</h1>
+  <p>A dream to help others</p>
+  <p>✨A showcase of my works and creations ✨</p>
+</header>
+
 
   <section class="projects">
     <a class="card" href="https://github.com/KloBraticc/Plexity" target="_blank">
@@ -154,28 +250,87 @@
         <p>A customization and tweaking tool designed for better control and performance.</p>
       </div>
     </a>
-	
-	    <a class="card" target="_blank">
-      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Klo Tweaker">
+
+    <a class="card" href="https://github.com/KloBraticc/Klo-Tweaker" target="_blank">
+      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Hellstrap">
       <div class="card-content">
         <h3>Hellstrap (Coming Soon!)</h3>
-        <p>A all in 1 bootstrapper for tweaking almost any game.</p>
+        <p>An all-in-one bootstrapper for tweaking almost any game.</p>
       </div>
     </a>
-	
-		    <a class="card" target="_blank">
-      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Klo Tweaker">
+
+    <a class="card" href="https://github.com/KloBraticc/Klo-Tweaker" target="_blank">
+      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="AVTweaker">
       <div class="card-content">
         <h3>AVTweaker (Coming Soon!)</h3>
         <p>A 1 button click tweaker for debloats and optimizations.</p>
       </div>
     </a>
   </section>
-  
-  lub cozy
+
+<div class="profile">
+  <img id="discord-avatar" src="Lua-Logo.svg.png" alt="Discord Profile" />
+  <img id="discord-avatar" src="gif.gif" alt="Discord Profile" />
+  <img id="discord-avatar" src="Logo_C_sharp.svg.png" alt="Discord Profile" />
+  <p class="discord-tag">Bratic</p>
+    <div class="profile-buttons">
+    <a href="https://www.youtube.com/@ThisBratic" class="btn">YouTube</a>
+    <a href="https://github.com/KloBraticc?tab=repositories" class="btn">GitHub</a>
+    <a href="https://x.com/Braticpok" class="btn">Twitter</a>
+  </div>
+</div>
+
+  <div class="skills">
+    <div class="skill">
+      <p>Luau</p>
+      <div class="progress"><div class="progress-bar" style="color: white;" data-width="100">100%</div></div>
+    </div>
+    <div class="skill">
+      <p>C#</p>
+      <div class="progress"><div class="progress-bar" style="color: white;" data-width="70">70%</div></div>
+    </div>
+    <div class="skill">
+      <p>Node.js</p>
+      <div class="progress"><div class="progress-bar" style="color: white;" data-width="35">35%</div></div>
+    </div>
+        <div class="skill">
+      <p>Cmd</p>
+      <div class="progress"><div class="progress-bar" style="color: white;" data-width="65">65%</div></div>
+    </div>
+        <div class="skill">
+      <p>Bat</p>
+      <div class="progress"><div class="progress-bar" style="color: white;" data-width="45">45%</div></div>
+    </div>
+        <div class="skill">
+      <p>Python</p>
+      <div class="progress"><div class="progress-bar" style="color: white;" data-width="15">15%</div></div>
+    </div>
+        <div class="skill">
+      <p>java</p>
+      <div class="progress"><div class="progress-bar" style="color: white;" data-width="50">50%</div></div>
+    </div>
+            <div class="skill">
+      <p>Html</p>
+      <div class="progress"><div class="progress-bar" style="color: white;" data-width="100">100%</div></div>
+    </div>
+  </div>
+
+  Lub u Cozy
 
   <footer>
     <p>© 2025 Bratics Projects. All rights reserved.</p>
   </footer>
+
+  <script>
+    window.addEventListener('load', () => {
+      document.querySelectorAll('.progress-bar').forEach(bar => {
+        const width = bar.getAttribute('data-width');
+        bar.style.width = "0";
+        setTimeout(() => {
+          bar.style.width = width + "%";
+        }, 200);
+      });
+    });
+  </script>
 </body>
 </html>
